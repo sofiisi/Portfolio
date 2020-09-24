@@ -1,0 +1,14 @@
+.custom {
+  cursor: url(/my-cursor.png), auto;
+}
+body {
+  background-color: indigo;
+  background-size: cover;
+}
+
+h1 {
+	 text-align: center;
+ color: white;
+  font-size: 45px;
+  font-family: georgia;
+}
