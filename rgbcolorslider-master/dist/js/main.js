@@ -43,9 +43,9 @@ function colorNumbrVals(){
     greenNumVal.value = green.value;
     blueNumVal.value = blue.value;
 
-    int r = Integer.parseInt(red.value);
-    int g = Integer.parseInt(green.value);
-    int b = Integer.parseInt(blue.value);
+    int r1 = Integer.parseInt(red.value);
+    int g1 = Integer.parseInt(green.value);
+    int b1 = Integer.parseInt(blue.value);
 }
 
 // initial colors when DOM is loaded
@@ -193,13 +193,13 @@ function colorSliders(){
 
           console.log("updating");
             ref.update({
-                 "Red": r
+                 "Red": r1
                                 });
             ref.update({
-                 "Green": g
+                 "Green": g1
                                 });
             ref.update({
-                 "Blue": b
+                 "Blue": b1
                                 });
                  
                                       }
