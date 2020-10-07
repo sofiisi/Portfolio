@@ -187,5 +187,12 @@ function colorSliders(){
             ref.update({
                  "Red": red.value
                                 });
+            ref.update({
+                 "Green": green.value
+                                });
+            ref.update({
+                 "Blue": blue.value
+                                });
 
+                 
                                       }
