@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cloud lamp project</title>
+</head>
+<body>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-database.js"></script>
+
+    <div class="wrap">
+        <header>
+            <h1>
+                Cloud lamp
+            </h1>
+        </header>
+        <main>
+            <div class="color-slider-wrap">
+                <div class="color-wrap">
+                    <div id="color-display"></div>
+                </div>
+                <div class="sliders">
+                    <div>
+                        <label for="red">Red</label>
+                        <input type="number" id="redNum">
+                        <input value="200" type="range" min="0" max="255" id="red">
+                    </div>
+                    <div>
+                        <label for="green">Green</label>
+                        <input type="number" id="greenNum">
+                        <input value="130" type="range" min="0" max="255" id="green">
+                    </div>
+                    <div>
+                        <label for="blue">Blue</label>
+                        <input type="number" id="blueNum">
+                        <input value="180" type="range" min="0" max="255" id="blue">
+                    </div>
+                    <div>
+                        <button id="send" name="sendar">Send!</button>
+                        <button id="off" name="offlamp">Turn Off!</button>
+                        <script type="text/javascript">
+                             var firebaseConfig = {
+                                apiKey: "AIzaSyBmDxJ0swMs4lwGM5IfEskrArX3tS-yNOQ",
+                                authDomain: "cloudlamp-c6529.firebaseapp.com",
+                                databaseURL: "https://cloudlamp-c6529.firebaseio.com",
+                                projectId: "cloudlamp-c6529",
+                                storageBucket: "cloudlamp-c6529.appspot.com",
+                                messagingSenderId: "703743319164",
+                                appId: "1:703743319164:web:22e9e10ffed18a40097df9"
+                              };
+                            // Initialize Firebase
+                                firebase.initializeApp(firebaseConfig);
+
+                            // Get a database reference to our blog
+                                var ref = firebase.database().ref("/");
+
+                            // make the buttons call the function below 
+                                document.getElementById('send').addEventListener('click', sendA, false);
+
+                            //function for firebase
+                                function sendA(){
+                                console.log("updating");
+                                ref.update({
+                                    "Red": red.value
+                                    "Green": green.value
+                                    "Blue": blue.value
+                                });
+
+                                              }
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
