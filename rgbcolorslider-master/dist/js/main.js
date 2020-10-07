@@ -42,10 +42,6 @@ function colorNumbrVals(){
     redNumVal.value = red.value;
     greenNumVal.value = green.value;
     blueNumVal.value = blue.value;
-
-    int r1 = Integer.parseInt(red.value);
-    int g1 = Integer.parseInt(green.value);
-    int b1 = Integer.parseInt(blue.value);
 }
 
 // initial colors when DOM is loaded
