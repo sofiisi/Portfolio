@@ -188,7 +188,7 @@ function colorSliders(){
         r2 = red.value;
         g2 = green.value;
        b2 = blue.value;
-    int r1 = Integer.parseInt(r2);
+    int r1 = Integer.parseInt(r2.trim());
     int g1 = parseInt(g2);
     int b1 = parseInt(b2);
           console.log("updating");
