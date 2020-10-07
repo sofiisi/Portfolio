@@ -186,9 +186,6 @@ function colorSliders(){
        function sendA(){
           console.log("updating");
             ref.update({
-                 "Off": "OFF"
-                                });
-            ref.update({
                  "Red": red.value
                                 });
             ref.update({
