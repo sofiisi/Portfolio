@@ -180,6 +180,7 @@ function colorSliders(){
 
   // make the buttons call the function below 
        document.getElementById('send').addEventListener('click', sendA, false);
+       document.getElementById('off').addEventListener('click', offl, false);
 
   //function for firebase
        function sendA(){
@@ -193,6 +194,11 @@ function colorSliders(){
             ref.update({
                  "Blue": blue.value
                                 });
-
                  
                                       }
+        function offl(){
+            console.log("turning off");
+            ref.update({
+                 "Off": "ON"
+                                });
+        }
