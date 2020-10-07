@@ -163,9 +163,6 @@ function colorSliders(){
     });
 }
 
-int r=Integer.parseInt(red.value);
-int g=Integer.parseInt(green.value);
-int b=Integer.parseInt(blue.value);
 
  var firebaseConfig = {
            apiKey: "AIzaSyBmDxJ0swMs4lwGM5IfEskrArX3tS-yNOQ",
@@ -188,6 +185,10 @@ int b=Integer.parseInt(blue.value);
 
   //function for firebase
        function sendA(){
+        
+int r=Integer.parseInt(red.value);
+int g=Integer.parseInt(green.value);
+int b=Integer.parseInt(blue.value);
           console.log("updating");
             ref.update({
                  "Red": r
