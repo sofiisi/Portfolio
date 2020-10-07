@@ -42,6 +42,10 @@ function colorNumbrVals(){
     redNumVal.value = red.value;
     greenNumVal.value = green.value;
     blueNumVal.value = blue.value;
+
+    int r=Integer.parseInt(red.value);
+    int g=Integer.parseInt(green.value);
+    int b=Integer.parseInt(blue.value);
 }
 
 // initial colors when DOM is loaded
@@ -186,9 +190,7 @@ function colorSliders(){
   //function for firebase
        function sendA(){
 
-int r=Integer.parseInt(redNumVal);
-int g=Integer.parseInt(greenNumVal);
-int b=Integer.parseInt(blueNumVal);
+
           console.log("updating");
             ref.update({
                  "Red": r
