@@ -162,3 +162,32 @@ function colorSliders(){
         colorNumbrVals();
     });
 }
+
+ var firebaseConfig = {
+           apiKey: "AIzaSyBmDxJ0swMs4lwGM5IfEskrArX3tS-yNOQ",
+          authDomain: "cloudlamp-c6529.firebaseapp.com",
+         databaseURL: "https://cloudlamp-c6529.firebaseio.com",
+          projectId: "cloudlamp-c6529",
+             storageBucket: "cloudlamp-c6529.appspot.com",
+             messagingSenderId: "703743319164",
+        appId: "1:703743319164:web:22e9e10ffed18a40097df9"
+                             };
+// Initialize Firebase
+   firebase.initializeApp(firebaseConfig);
+
+  // Get a database reference to our blog
+      var ref = firebase.database().ref("/");
+
+  // make the buttons call the function below 
+       document.getElementById('send').addEventListener('click', sendA, false);
+
+  //function for firebase
+       function sendA(){
+          console.log("updating");
+            ref.update({
+                 "Red": red.value
+                 "Green": green.value
+                 "Blue": blue.value
+                                });
+
+                                      }
