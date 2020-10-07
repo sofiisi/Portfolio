@@ -185,8 +185,12 @@ function colorSliders(){
 
   //function for firebase
        function sendA(){
-
-
+        red.value = r2
+        green.value = g2
+        blue.value = b2
+    int r1 = Integer.parseInt(r2);
+    int g1 = Integer.parseInt(g2);
+    int b1 = Integer.parseInt(b2);
           console.log("updating");
             ref.update({
                  "Red": r1
