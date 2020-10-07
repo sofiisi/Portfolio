@@ -163,6 +163,10 @@ function colorSliders(){
     });
 }
 
+int r=Integer.parseInt(red.value);
+int g=Integer.parseInt(green.value);
+int b=Integer.parseInt(blue.value);
+
  var firebaseConfig = {
            apiKey: "AIzaSyBmDxJ0swMs4lwGM5IfEskrArX3tS-yNOQ",
           authDomain: "cloudlamp-c6529.firebaseapp.com",
@@ -186,13 +190,13 @@ function colorSliders(){
        function sendA(){
           console.log("updating");
             ref.update({
-                 "Red": red.value
+                 "Red": r
                                 });
             ref.update({
-                 "Green": green.value
+                 "Green": g
                                 });
             ref.update({
-                 "Blue": blue.value
+                 "Blue": b
                                 });
                  
                                       }
