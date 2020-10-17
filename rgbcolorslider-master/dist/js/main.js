@@ -192,6 +192,10 @@ function colorSliders(){
    // int g1 = parseInt(g2);
    // int b1 = parseInt(b2);
           console.log("updating");
+          console.log(red.value);
+          console.log(r2);
+
+
             ref.update({
                  "Red": r1
                                 });
