@@ -37,7 +37,7 @@ main{
 }
 
 #color-display::before{
-    content: 'Move sliders to change Color then press the button to see it in the lamp';
+    content: 'Move sliders to change Color then press the button to see it in the lamp.';
     color: #ffffff;
     text-shadow: 0 0 4px #333333;
 }

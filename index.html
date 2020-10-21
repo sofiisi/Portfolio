@@ -96,135 +96,45 @@
           </div>
 
           <div class="tm-section-wrap bg-white">
-            <section id="about" class="row tm-section">
-              <div class="col-xl-6">
-                <div class="tm-section-half">    
-                    <div><i class="fas fa-6x fa-balance-scale mb-5 tm-section-icon"></i></div>                        
-                    <h2 class="tm-section-title tm-color-primary mb-5">Face Mask Recognition</h2>
-                    <p class="mb-5">
-                      When first section is scrolled up, BG image will be
-                      disappeared with a parallax effect. Donec ac tempor tellus, a
-                      eleifend ligula. Fusce vitae sem sed purus euismod
-                      condimentum.
-                    </p>
-                    <p>
-                      Sed at orci non metus tristique suscipit vitae in nibh. Sed
-                      rutrum odio ac est hendrerit, at vestibulum felis condimentum.
-                    </p>
-                </div>
-              </div>
-              <div class="col-xl-6">
-                <div class="tm-section-half">
-                    <div><i class="far fa-6x fa-building mb-5 tm-section-icon"></i></div>
-                    <h2 class="tm-section-title tm-color-primary mb-5">Catan</h2>
-                    <p class="mb-5">
-                      You can use this template for your commercial websites or for your clients. 
-                      You are NOT allowed to re-post this template as a downloadable ZIP file 
-                      on your template collection sites. It is illegal.
-                    </p>
-                    <p>
-                      Suspendisse fermentum orci eget lorem euismod suscipit. Morbi
-                      condimentum odio metus, at finibus dolor sollicitudin quis.
-                      Curabitur eu congue erat.
-                    </p>
-                </div>
-              </div>
+          <section id="about" class="row tm-section">
+              <div class="col-12 tm-section-pad">
+                  <div class="tm-flex-item-left">
+                      <div class="tm-w-80">
+                          <h2 class="tm-color-primary tm-section-title mb-4">Face mask recognition</h2>
+                          <p><strong>Hardware</strong></p>
+                          <p class="mb-5">
+                            I design a box that could fit and show the camera and two LEDs. Initially, I wanted to solder the wires and part to better resistance, but I want to re-utilize LEDs and board in future projects, so I used jumper wires and a breadboard. The hardware is pretty simple; I had the microcontroller connected to two LEDs and an FTDI programmer for the computer connection. I just followed the tutorial instructions for connection and then added the lights.
+                          </p>
+                          <p>                            
+                            I want to clarify that right now, the machine works just when I press a button, but I don’t know how to fix it yet. I believe it’s not a code problem, but it might be the weak WIFI or that the microcontroller is not powerful in off to stream the video and get the result simultaneously. I will keep working to figure out what it is and how I can improve it.
+                          </p>
+                          <iframe src="https://gmail988452.autodesk360.com/shares/public/SH919a0QTf3c32634dcf191c66a2fa416c25?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+                          <p><strong>Software</strong></p>
+                          <p class="mb-5">
+                           As I mentioned in the video, I asked for help to get reference data. With more than 30 people participating, I used teachable machine to create my model.
+                          </p>
+                          <p>                            
+                            The first thing that I did was to take the ESP32-CAM example and modified to be just one code. In the beginning, it had the HTML parsed into another file. So I parsed back to HTML and put it all in just one code. Then I eliminated some stuff I didn't need to simplify the program. When I had a stream, I edit the JavaScript to add the model. What I did was took the process of teachable machine example but changed it to use the stream camera instead of the webcam. I create a function to print the data and decide which class is more probable. With that data, I add an upload function to update the firebase. After that, I came back to the raw Arduino, where I set up the connection with the database and create a code that reads the data and turns on the green LED if the person is using the face mas or the red LED if it's not. 
+                          </p>
+                          <iframe src=https://create.arduino.cc/editor/sofiisi/13de980e-a0e7-4a77-9ab8-3c614686f169/preview?embed style="height:510px;width:100%;margin:10px 0" frameborder=0></iframe>
+                      </div>                      
+                  </div> 
+              </div>                             
             </section>
           </div>
             
           <div class="tm-section-wrap bg-white">
-            <section id="work" class="row tm-section">
-              <div class="col-12">
-                <div class="w-100 tm-double-border-1 tm-border-gray">
-                    <div class="tm-double-border-2 tm-border-gray tm-box-pad">
-                      <div class="tm-gallery-wrap">
-                          <h2 class="tm-color-primary tm-section-title mb-4 ml-2">Catan</h2>
-                          <div class="tm-gallery">
-                            <div class="tm-gallery-item">                        
-                              <figure class="effect-bubba">
-                                <img src="img/gallery/01.jpg" alt="Our Work Image" class="img-fluid">
-                                <figcaption>
-                                  <h2>Fresh <span>Bubba</span></h2>
-                                  <p>Bubba likes to appear out of thin air.</p>
-                                  <a href="img/gallery/large/01.jpg">View more</a>
-                                </figcaption>
-                              </figure>
-                            </div>
-                            <div class="tm-gallery-item">
-                              <figure class="effect-bubba">
-                                <img src="img/gallery/02.jpg" alt="Our Work Image" class="img-fluid">
-                                <figcaption>
-                                  <h2>Fresh <span>Bubba</span></h2>
-                                  <p>Bubba likes to appear out of thin air.</p>
-                                  <a href="img/gallery/large/02.jpg">View more</a>
-                                </figcaption>
-                              </figure>
-                            </div>
-                            <div class="tm-gallery-item">
-                              <figure class="effect-bubba">
-                                <img src="img/gallery/03.jpg" alt="Our Work Image" class="img-fluid">
-                                <figcaption>
-                                  <h2>Fresh <span>Bubba</span></h2>
-                                  <p>Bubba likes to appear out of thin air.</p>
-                                  <a href="img/gallery/large/03.jpg">View more</a>
-                                </figcaption>
-                              </figure>
-                            </div>
-                            <div class="tm-gallery-item">
-                              <figure class="effect-bubba">
-                                <img src="img/gallery/04.jpg" alt="Our Work Image" class="img-fluid">
-                                <figcaption>
-                                  <h2>Fresh <span>Bubba</span></h2>
-                                  <p>Bubba likes to appear out of thin air.</p>
-                                  <a href="img/gallery/large/04.jpg">View more</a>
-                                </figcaption>
-                              </figure>
-                            </div>
-                            <div class="tm-gallery-item">
-                              <figure class="effect-bubba">
-                                <img src="img/gallery/05.jpg" alt="Our Work Image" class="img-fluid">
-                                <figcaption>
-                                  <h2>Fresh <span>Bubba</span></h2>
-                                  <p>Bubba likes to appear out of thin air.</p>
-                                  <a href="img/gallery/large/05.jpg">View more</a>
-                                </figcaption>
-                              </figure>
-                            </div>
-                            <div class="tm-gallery-item">
-                              <figure class="effect-bubba">
-                                <img src="img/gallery/06.jpg" alt="Our Work Image" class="img-fluid">
-                                <figcaption>
-                                  <h2>Fresh <span>Bubba</span></h2>
-                                  <p>Bubba likes to appear out of thin air.</p>
-                                  <a href="img/gallery/large/06.jpg">View more</a>
-                                </figcaption>
-                              </figure>
-                            </div>
-                            <div class="tm-gallery-item">
-                              <figure class="effect-bubba">
-                                <img src="img/gallery/07.jpg" alt="Our Work Image" class="img-fluid">
-                                <figcaption>
-                                  <h2>Fresh <span>Bubba</span></h2>
-                                  <p>Bubba likes to appear out of thin air.</p>
-                                  <a href="img/gallery/large/07.jpg">View more</a>
-                                </figcaption>
-                              </figure>
-                            </div>
-                            <div class="tm-gallery-item">
-                              <figure class="effect-bubba">
-                                <img src="img/gallery/08.jpg" alt="Our Work Image" class="img-fluid">
-                                <figcaption>
-                                  <h2>Fresh <span>Bubba</span></h2>
-                                  <p>Bubba likes to appear out of thin air.</p>
-                                  <a href="img/gallery/large/08.jpg">View more</a>
-                                </figcaption>
-                              </figure>
-                            </div>
-                          </div>
-                      </div>                        
-                    </div>                  
-                  </div>     
-              </div>         
+           <section id="work" class="row tm-section">
+              <div class="col-12 tm-section-pad">
+                  <div class="tm-flex-item-left">
+                      <div class="tm-w-80">
+                          <h2 class="tm-color-primary tm-section-title mb-4">Catan</h2>
+                          <p class="mb-5">
+                            My next project doesn't involve any electronics. With my friends, we really enjoy playing board games, especially Settlers of Catan, so I 3d print and hand paint the hole base game. I made some extras like the longest road reward. Now I'm working on creating our cards. I didn’t design the pieces I collect them from different makers. I modified some of the to fit better. What I learned with this project was to 3D print, this was my first big project in my own printer, so I had to figure out leveling and how to prevent lifting. In the pictures I show some of the failures. 
+                          </p>
+                      </div>
+                  </div> 
+              </div>                             
             </section>
           </div>
             
@@ -234,55 +144,19 @@
                   <div class="tm-flex-item-left">
                       <div class="tm-w-80">
                           <h2 class="tm-color-primary tm-section-title mb-4">Our Clients</h2>
+                          <p><strong>Hardware</strong></p>
                           <p class="mb-5">
-                            Aenean est augue, iaculis ut arcu a, cursus tempus eros.
-                            Maecenas ut efficitur lectus, vel commodo nibh. Vivamus
-                            consequat massa non euismod facilisis. Morbi assumsan non libero
-                            a vehicula. Donec blandit suscipit magna sit amet elementum.
+                            I used fusion 360 to design a lamp with a thread system to connect to the base for easy access to the circuit. The top of the lamp was created to fit perfectly in the cylinder; I end up gluing that parts together. I designed the cylinder to be as thin as it could be at the same time keeping the clouds in shape. All was 3D printed on an Ender 3 pro with PLA. 
+                          </p>                    
+                         <iframe src="https://gmail988452.autodesk360.com/shares/public/SH919a0QTf3c32634dcfd937aa1772f532b4?mode=embed" width="640" height="480" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true"  frameborder="0"></iframe>
+                          <p><strong>Software</strong></p>
+                          <p class="mb-5">
+                          For the code, I create a website with three sliders, each corresponding to the RGB colors. What the JavaScript does is to assign a number between 0 and 255 to a position in the slider or vice versa. The RGB color is displayed at the top of the website, so I can see which color is before sending it. The number is a string, but the Arduino needs an int. Therefore, before updating the data to the database, I convert the string into an int with parse. I also include a button to turned off. I used Firebase as my database. Here I’m going to include just the Arduino and the JavaScript because are the two most important; for more specification reefer to my GitHub in the Portfolio repository. 
                           </p>
-                      </div>
-                      
-                      <div class="row tm-clients-images">
-                        <div class="col-xl-3 col-lg-6 col-md-4 col-sm-6 tm-img-wrap">
-                          <a href="https://google.com">
-                            <img src="img/client-1.png" alt="Client Image" class="img-fluid tm-client-img" />
-                          </a>                          
-                        </div>
-                        <div class="col-xl-3 col-lg-6 col-md-4 col-sm-6 tm-img-wrap">
-                          <a href="https://facebook.com">
-                            <img src="img/client-2.png" alt="Client Image" class="img-fluid tm-client-img" />
-                          </a>                          
-                        </div>
-                        <div class="col-xl-3 col-lg-6 col-md-4 col-sm-6 tm-img-wrap">
-                          <a href="https://twitter.com">
-                            <img src="img/client-3.png" alt="Client Image" class="img-fluid tm-client-img" />
-                          </a>                          
-                        </div>
-                        <div class="col-xl-3 col-lg-6 col-md-4 col-sm-6 tm-img-wrap">
-                          <a href="https://instagram.com">
-                            <img src="img/client-4.png" alt="Client Image" class="img-fluid tm-client-img" />
-                          </a>                          
-                        </div>
-                        <div class="col-xl-3 col-lg-6 col-md-4 col-sm-6 tm-img-wrap">
-                            <a href="https://google.com">
-                              <img src="img/client-5.png" alt="Client Image" class="img-fluid tm-client-img" />
-                            </a>                          
-                          </div>
-                          <div class="col-xl-3 col-lg-6 col-md-4 col-sm-6 tm-img-wrap">
-                            <a href="https://facebook.com">
-                              <img src="img/client-6.png" alt="Client Image" class="img-fluid tm-client-img" />
-                            </a>                          
-                          </div>
-                          <div class="col-xl-3 col-lg-6 col-md-4 col-sm-6 tm-img-wrap">
-                            <a href="https://twitter.com">
-                              <img src="img/client-7.png" alt="Client Image" class="img-fluid tm-client-img" />
-                            </a>                          
-                          </div>
-                          <div class="col-xl-3 col-lg-6 col-md-4 col-sm-6 tm-img-wrap">
-                            <a href="https://instagram.com">
-                              <img src="img/client-8.png" alt="Client Image" class="img-fluid tm-client-img" />
-                            </a>                          
-                          </div>
+                          <p>                            
+                            Website: <a href= "https://sofiisi.github.io/Portfolio/rgbcolorslider-master/dist/index.html" >https://sofiisi.github.io/Portfolio/rgbcolorslider-master/dist/index.html</a>
+                          </p>                       
+                          <iframe src=https://create.arduino.cc/editor/sofiisi/df0fba19-969e-4c7b-a16b-b33fc57bde18/preview?embed style="height:510px;width:100%;margin:10px 0" frameborder=0></iframe>
                       </div>
                   </div> 
               </div>                             
